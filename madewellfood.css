@@ -1,0 +1,13 @@
+.background {
+    background:url('../../background.jped');
+    position: relative;
+}
+
+.layer {
+    background-color:#FFFFFF;
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 100%;
+    height: 10%;
+}
