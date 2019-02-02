@@ -14,8 +14,16 @@
 
 h1 {
 	font-family:georgia; 
-	color:#4B6633 
+	color:#4B6633; 
 	font-size:20px ;
 	font-weight:bold;
+	text-align:center;
+}
 
+h2 {
+	font-family:georgia;
+	color:#393F34;
+	font-size:10px;
+	font-weight:normal;
+	text-align:center;
 }
