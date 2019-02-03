@@ -1,6 +1,8 @@
-/*.background {
-    background:url('../../background.jped');
-    position: relative;
+.header {
+    background:url('https://www.photocase.com/photos/2234153-healthy-eating-winter-background-picture-food-style-design-photocase-stock-photo-large.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 800px;
+    text-align: center;
 }
 
 .layer {
@@ -10,7 +12,7 @@
     left: 0;
     width: 100%;
     height: 10%;
-}*/
+}
 
 h1 {
 	font-family:georgia; 
@@ -20,7 +22,7 @@ h1 {
 	text-align:center;
 }
 
-h2 {
+p {
 	font-family:georgia;
 	color:#393F34;
 	font-size:20px;
