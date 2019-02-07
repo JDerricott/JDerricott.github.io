@@ -77,7 +77,7 @@ function totalConvert() {
 
 	//alert('inValue + " " + inUnits + " is equivalent to " + outValue + " " + outUnits');
 
-	document.getElementById("convertSentence").innerHTML = inValue + " " + inUnits + " is equivalent to " + outValue + " " + outUnits;
+	document.getElementById("convertSentence").innerHTML = (inValue + " " + inUnits + " is equivalent to " + outValue + " " + outUnits);
 }
 
 
