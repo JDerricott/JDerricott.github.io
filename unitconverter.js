@@ -70,13 +70,12 @@ function totalConvert() {
 	var inUnits = inUnitsBox.options[inUnitsBox.selectedIndex].text;
 	var outUnitsBox = document.getElementById("Output Units");
 	var outUnits = outUnitsBox.options[outUnitsBox.selectedIndex].text;
-	var inValue = document.getElementById("inputNum");
+	var inValue = document.getElementById("inputNum").value;
+	alert(inValue);
 	
 	outFeet = convertToFeet(inValue, inUnits);
 	outValue = convertFromFeet(outFeet, outUnits);
 	var outLine = inValue + " " + inUnits + " is equivalent to " + outValue + " " + outUnits;
-
-	//alert('inValue + " " + inUnits + " is equivalent to " + outValue + " " + outUnits');
 
 	document.getElementById("convertSentence").innerHTML = outLine;
 }
