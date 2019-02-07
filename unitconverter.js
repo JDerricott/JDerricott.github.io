@@ -75,7 +75,9 @@ function totalConvert() {
 	outFeet = convertToFeet(inValue, inUnits);
 	outValue = convertFromFeet(outFeet, outUnits);
 
-	document.write(inValue + " " + inUnits + " is equivalent to " + outValue + " " + outUnits);
+	//alert('inValue + " " + inUnits + " is equivalent to " + outValue + " " + outUnits');
+
+	document.getElementById("convertSentence").innerHTML = (inValue + " " + inUnits + " is equivalent to " + outValue + " " + outUnits);
 }
 
 
