@@ -1,7 +1,4 @@
-// var inUnitsBox = document.getElementById("Input Units");
-// var inUnits = inUnitsBox.options[inUnitsBox.selectedIndex].text;
-// var outUnitsBox = document.getElementById("Output Units");
-// var outUnits = outUnitsBox.options[outUnitsBox.selectedIndex].text;
+
 
 
 function convertToFeet(inNum, inUn) {
