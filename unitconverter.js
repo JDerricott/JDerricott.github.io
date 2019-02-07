@@ -70,7 +70,7 @@ function totalConvert() {
 	var inUnits = inUnitsBox.options[inUnitsBox.selectedIndex].text;
 	var outUnitsBox = document.getElementById("Output Units");
 	var outUnits = outUnitsBox.options[outUnitsBox.selectedIndex].text;
-	var inValue = document.getElementById("inputNum").
+	var inValue = document.getElementById("inputNum");
 	
 	outFeet = convertToFeet(inValue, inUnits);
 	outValue = convertFromFeet(outFeet, outUnits);
