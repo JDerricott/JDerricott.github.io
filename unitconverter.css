@@ -2,13 +2,13 @@
 	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-style: bold;
 	font-size: 30px;
-	font-color: #3C51B4;
+	font-color: #3c51b4;
 	text-align: center;
 	text-transform: uppercase;
 }
 
 .dropdown {
-	position: relative;
+	text-align: center;
 	display: inline-block;
 }
 
@@ -23,3 +23,13 @@
 	display: block;
 }
 
+p {
+	text-align: center;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 20px;
+}
+
+select {
+display: block;
+margin: 0 auto;
+}

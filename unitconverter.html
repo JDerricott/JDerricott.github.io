@@ -15,7 +15,7 @@
       <p>
     	Input units:
         <!-- Input Units -->
-    	<div class = "dropdown">
+    	<div id = "dropdown">
     		<select id = "Input Units">
     			<option value = "Inches">Inches</option>
     			<option value = "Feet">Feet</option>
@@ -30,7 +30,7 @@
     <p>
     <p> Output Units: 
         <!-- Output Value Box -->
-    	<div class = "dropdown">
+    	<div id = "dropdown">
     		<select id = "Output Units">
     			<option value = "Inches">Inches</option>
     			<option value = "Feet">Feet</option>
@@ -46,7 +46,9 @@
     <script type = "text/javascript" src = "unitconverter.js"></script>
     <!-- Calculate Button -->
     <!-- FIX ME!!!!!! Call function from .js file and pull in Variables...do i declare the userinput variables in .js or out of .js -->
-    <input type = button value = "Convert" onclick = "totalConvert()">
+    <p>
+        <input type = button value = "Convert" onclick = "totalConvert()">
+    </p>
 
     </p>
     </p>
