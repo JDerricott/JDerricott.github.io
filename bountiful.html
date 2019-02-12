@@ -23,18 +23,20 @@
   <body>
     <div id="map"></div>
     <script>
-      var map;
+      //var map;
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 40.871368, lng: -111.867412},
-          zoom: 8
+          zoom: 13
         });
 		//House marker
+		var houseLatLng = {lat: 40.877691, lng: -111.839921};
         var houseMarker = new google.maps.Marker({
-        	postition: {lat: 40.877691, lon: -111.839921},
+        	postition: houseLatLng,
         	map:map,
         	title: "Jeff's House"
 		});
+		houseMarker.setMap(map);
 		var houseString = '<div id="content">'+
             '<div id="siteNotice">'+
             '</div>'+
