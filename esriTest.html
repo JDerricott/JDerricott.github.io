@@ -1,0 +1,75 @@
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <!--
+  ArcGIS API for JavaScript, https://js.arcgis.com
+  For more information about the intro-mapview sample, read the original sample description at developers.arcgis.com.
+  https://developers.arcgis.com/javascript/latest/intro-mapview/index.html
+  -->
+<title>Intro to MapView - Create a 2D map - 4.8</title>
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.8/esri/css/main.css">
+  <script src="https://js.arcgis.com/4.8/"></script>
+  <script>
+  	require(["esri/Map", "esri/views/MapView"], function(
+  Map,
+  MapView
+) {
+  const map = new Map({
+    basemap: "streets-navigation-vector"
+  });
+
+  const view = new MapView({
+    container: "viewDiv",
+    map: map,
+    zoom: 12,
+    center: {
+        latitude: 32.7353,
+        longitude: -117.1490
+    }
+  });
+  
+  const contentString = "The <a href='http://zoo.sandiegozoo.org/'>San Diego Zoo</a> " + 
+        " in Balboa Park houses over 3,700 animals." +
+        "<p><p><img src='https://visitoceanside.org/wp-content/uploads/2013/01/SanDiegoZoo.jpg' alt='San Diego Zoo' height='150'>"; 
+  view.graphics.add({
+    symbol: {
+      type: "text",
+        color: "#7A003C",
+        text: "\ue61d", // esri-icon-map-pin
+        font: {
+            size: 30,
+            family: "CalciteWebCoreIcons"
+        }
+    },
+    geometry: {
+      type: "point",
+      longitude: -117.1490,
+      latitude: 32.7353
+    },
+    popupTemplate: {
+      title: "San Diego Zoo",
+      content: contentString
+    }
+  });
+});
+
+  </script>
+</head>
+
+<body>
+  <div id="viewDiv"></div>
+</body>
+</html>
