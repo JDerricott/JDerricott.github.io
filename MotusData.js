@@ -5,18 +5,15 @@ require(["esri/Map",
   MapView,
   MapImageLayer
 ) {
-  const map = new Map({
+  var map = new Map({
     basemap: "streets-navigation-vector"
   });
 
-  const view = new MapView({
+  var view = new MapView({
     container: "viewDiv",
     map: map,
     zoom: 1,
-    center: {
-        latitude: 40.576267,
-        longitude: -111.988844
-    }
+    center: [-111.988844, 40.576267]
   });
   // points to the states layer in a service storing U.S. census data
   var layer = new MapImageLayer({
