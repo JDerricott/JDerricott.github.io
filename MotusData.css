@@ -1,0 +1,25 @@
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: bold;
+	font-size: 20px;
+	color:rgb (64,64,64)
+
+}
+
+html, body, #viewDiv {
+	padding: 0;
+	margin: 0;
+	height: 95%;
+}
+
+#viewDiv {
+	border-style: solid;
+	border-color: rgb(64,64,64);
+	border-width: 8px;
+}
+
+body {
+	background-color: grey;
+	font-family: arial;
+	color: rgb (64,64,64);
+}
