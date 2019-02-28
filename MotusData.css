@@ -3,6 +3,7 @@ h1 {
 	font-style: bold;
 	font-size: 20px;
 	color:rgb (64,64,64)
+	text-align: center;
 }
 
 html, body, #viewDiv {
